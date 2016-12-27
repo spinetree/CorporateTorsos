@@ -1,22 +1,75 @@
 {% include header.html %}
 
-    <div class="title-group">
-        <h1 class="special">{{ site.data.global.title }}</h1>
-        <h2>{{ site.data.global.description }}</h2>
-        <h3>{{ site.data.global.description }}</h3>
-        <h4>{{ site.data.global.description }}</h4>
+<div class="title-group container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="special">{{ site.data.global.title }}</h1>
+            <img alt="" src="{{ site.data.global.url }}/img/mri_birb.svg" />
+            <h2>{{ site.data.global.description }}</h2>
+            <button type="button" class="btn btn-primary btn-lg">Take Free Survey</button>
+        </div>
+        <div class="socialbuttons col-md-4 col-md-offset-4">
+            <a href="" target="_blank"><i class="fa fa-facebook-official"></i></a>
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
     </div>
+</div>
 
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>'This here young lady,' said the Gryphon, 'she wants for to know your  history, she do.'</p>
-
-                    <p>'I'll tell it her,' said the Mock Turtle in a deep, hollow tone: 'sit  down, both of you, and don't speak a word till I've finished.'</p>
-                </div>
+<main>
+    <div class="container">
+        <div class="valueprop row">
+            <div class="col-md-4">
+                <img alt="" src="{{ site.data.global.url }}/img/headsetapps.svg" />
+                <h3>Headset Apps</h3>
+                <p>MRI’s enjoyable headset applications release dopamine. Removing your headset makes you less attractive.</p>
+            </div>
+            <div class="col-md-4">
+                <img alt="" src="{{ site.data.global.url }}/img/heretohelp.svg" />
+                <h3>Here to Help</h3>
+                <p>MRI researches the public because it cares deeply about important humanitarian causes. We are here to help.</p>
+            </div>
+            <div class="col-md-4">
+                <img alt="" src="{{ site.data.global.url }}/img/isolationnation.svg" />
+                <h3>Isolation Nation</h3>
+                <p>Since the flood of 2018 we must all remain together for safety.  Stay connected and avoid dying cold and alone.</p>
             </div>
         </div>
-    </main>
+        <div class="hello row">
+            <div class="col-md-8">
+                <h2>Hello</h2>
+                <p>MRI is not interested in your arms, legs, liver, spleen, or duodenum.  We are interested in market research. Take the brief survey below to alert us to the condition of your vessel.</p>   
+                <button type="button" class="btn btn-primary btn-lg">Take Free Survey</button>
+            </div>
+            <div class="col-md-4">
+                <img alt="" src="{{ site.data.global.url }}/img/mrilogo.svg" />
+            </div>
+        </div>
+        <div class="statue row">
+            <div class="col-md-7">
+                    <img class="statue" alt="" src="{{ site.data.global.url }}/img/liberty.jpg" />
+            </div>
+            <div class="col-md-5">
+                <h2>About US</h2>
+                <p>Oz, left to himself, smiled to think of his success in giving the Scarecrow and the Tin Woodman and the Lion exactly what they thought they wanted.  “How can I help being a humbug,” he said, “when all these people make me do things that everybody knows can’t be done?  It was easy to make the Scarecrow and the Lion and the Woodman happy, because they imagined I could do anything.  But it will take more than imagination to carry Dorothy back to Kansas, and I’m sure I don’t know how it can be done.” For three days Dorothy heard nothing from Oz.</p>
+            </div>
+        </div>
+    </div><!-- /container -->
+    <div id="fakefooter" class="container-fluid">
+        <div class="row">
+            <div class="col-s-4">
+                <i>©2016 Market Research, Inc.</i>
+            </div>
+            <div class="col-md-6">
+                <code>Nullam pharetra ante et lectus mollis, id accumsan neque fermentum. Nulla facilisi. Etiam tristique nulla non suscipit pulvinar. Donec eros libero, aliquam commodo dolor sit amet, viverra pellentesque orci. Nulla quis urna at nulla accumsan vehicula non non nibh. Sed vel varius ex. Pellentesque porta ac augue vitae congue. In venenatis quam non tellus efficitur pretium. Pellentesque ut enim interdum, euismod nibh non, luctus eros. Praesent egestas nisl et ornare varius. Cras fermentum ornare ligula, accumsan mollis velit varius quis. Ut pellentesque vestibulum sollicitudin.
+                </code>
+            </div>
+            <div class="col-md-4">
+                <h2>This is an H2</h2>
+            </div>
+            
+        </div> 
+    </div>
+</main>
 
 {% include footer.html %}

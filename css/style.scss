@@ -44,10 +44,11 @@ a {
     @extend %muli;
 }
 h1, h2, h3, h4, h5, h6 { @extend %muli;  }
+h1, h2, h3 {text-transform:uppercase;}
 
 h1 {font-weight:900; letter-spacing:1px;}
 h2 {font-weight:800; font-size:30; letter-spacing:1px; color:$white;}
-h3 {font-weight:400; font-size:28px; letter-spacing:.8px; color:$offwhite;}
+h3 {font-weight:400; font-size:22px; letter-spacing:.4px; color:$offwhite;}
 h4 {font-weight:400; font-size:20px; letter-spacing:.8px; color:$offwhite;}
 
 ::selection {
@@ -82,7 +83,7 @@ nav.navbar {
 .title-group {
     text-align: center;
     padding: 0 15px;
-    margin: 50px 0 100px;
+    margin: 100px auto 100px;
 
     p {
         max-width: 800px;
@@ -103,7 +104,6 @@ h1.special {
 
 .tile {
     position: relative;
-    box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
     margin-bottom: 125px;
 
     .inner-guts { padding: 50px; }
@@ -126,6 +126,14 @@ h1.special {
 .topper {
     position: relative;
 
+}
+
+#fakefooter {
+    padding:40px 100px;
+    margin:0 -100px!important;
+    background:black;
+    transform: rotate(3deg);
+    min-height:1400px;
 }
 
 pre {
