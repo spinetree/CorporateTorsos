@@ -43,13 +43,13 @@ a {
     font-weight: 400;
     @extend %muli;
 }
-h1, h2, h3, h4, h5, h6 { @extend %muli;  }
+h1, h2, h3, h4, h5, h6 { @extend %muli; letter-spacing:1px; color:$offwhite; }
 h1, h2, h3 {text-transform:uppercase;}
 
-h1 {font-weight:900; letter-spacing:1px;}
-h2 {font-weight:800; font-size:30; letter-spacing:1px; color:$white;}
-h3 {font-weight:400; font-size:22px; letter-spacing:.4px; color:$offwhite;}
-h4 {font-weight:400; font-size:20px; letter-spacing:.8px; color:$offwhite;}
+h1 {font-weight:900;}
+h2 {font-weight:800; font-size:30;}
+h3 {font-weight:400; font-size:22px; letter-spacing:.4px;}
+h4 {font-weight:400; font-size:20px; letter-spacing:.8px;
 
 ::selection {
     background: $pink;
