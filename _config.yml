@@ -1,4 +1,4 @@
-# Where things are
+ # Where things are
 source:      .
 destination: ./_site
 plugins_dir:     ./_plugins
@@ -24,7 +24,7 @@ unpublished: false
 whitelist: []
 gems:      [jekyll-paginate]
 
-# Conversion
+# Conversion    
 markdown:    kramdown
 highlighter: rouge
 lsi:         false
