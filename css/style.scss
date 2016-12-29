@@ -19,7 +19,7 @@ $maroon: #702B42;
 
 body {
     @extend %raleway;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
@@ -72,25 +72,25 @@ h3 {
 
 h1 {
     font-weight: 900;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 h2 {
     font-weight: 800;
-    font-size: 30;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
 h3 {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: .4px;
     margin-bottom: 20px;
 }
 
 h4 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: .8px;
 }
 
@@ -101,7 +101,7 @@ h4 {
 
 .fa {
     color:$grey;
-    font-size:36px;
+    font-size:30px;
     padding:0 15px;
     &:hover {color:$pink;}
 }
@@ -109,7 +109,7 @@ h4 {
 
 .title-group {
     text-align: center;
-    padding: 0 15px 100px;
+    padding: 0 15px 80px;
     margin: 60px auto 0;
     border-bottom:4px solid $grey;
     
@@ -124,8 +124,8 @@ h4 {
         margin-bottom: 80px;
     }    
     h2 {
-        max-width: 700px;
-        margin:0 auto 20px;
+        max-width: 600px;
+        margin:0 auto 30px;
     } 
     .btn {margin-bottom:40px;}    
 }
@@ -231,7 +231,7 @@ h4 {
 
 #citybg {
     height:320px;
-    margin:-100px 0 0;
+    margin:-140px 0 0;
     background: url("{{ site.data.global.url }}/img/citybg.png") repeat-x left bottom;
 }
 
