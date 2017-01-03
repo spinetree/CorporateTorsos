@@ -12,6 +12,7 @@ $offwhite:#FCF6E0;
 $white: #F2F2F0;
 $pink:#EE4C80;
 $grey:#80847A;
+$darkgrey: #686359;
 $maroon: #702B42;
 
 %raleway { font-family: 'Raleway', sans-serif; }
@@ -21,7 +22,6 @@ body {
     @extend %raleway;
     font-size: 14px;
     line-height: 30px;
-    padding-top: 51px;
     -webkit-font-smoothing: antialiased;
     background: $black;
     color:$white;
@@ -106,12 +106,24 @@ h4 {
     &:hover {color:$pink;}
 }
 
+.responsive {width:100%;}
+
+.center {text-align:center;}
+
+hr {    
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, $black, #222, $black);
+}
+
+
+//    The real stuff
+
 
 .title-group {
     text-align: center;
     padding: 0 15px 80px;
-    margin: 60px auto 0;
-    border-bottom:4px solid $grey;
+    margin: 100px auto 0;
     
     h1 {
         margin: 0 0 80px;
@@ -135,13 +147,15 @@ h4 {
 
 #valueprop {
     text-align:center;
-    padding:100px 0;
-    border-bottom:4px solid $grey;
+    padding:80px 0 40px;
     p {padding:0 40px;}
     img {margin-bottom:20px;}
 }
 
-#hello {padding:100px 0;}
+#hello {
+    padding:80px 0;
+    img {margin-bottom:40px;}
+}
 
 #statue {padding:100px 0 0;
     
@@ -177,12 +191,12 @@ h4 {
     .spinal {margin-top:880px; position:relative; left:60%;}
     .alert {
         margin:800px auto 300px; 
-        width:600px; 
         position:relative;
-        left:100px;
         transform: rotate(-3deg);
         text-align:center;
-        img {display:block; margin:0 auto;}
+        width:50%;
+        max-width:300px;
+        img {display:block; margin:0 auto; width:50%;}
         code {display:block;background:none;}
     }
 }
@@ -244,7 +258,46 @@ footer {
 }
 
 @media only screen and (max-width : 991px) {
-}
+    
+    #hello {
+        padding: 60px 0; 
+        text-align:center; 
+        img {width:50%;}
+    }    
+    #statue { padding: 40px 0 80px;
+        p {padding-right:0;}
+    }
+
+    .mobile-center {text-align:center;}
+    
+    .responsive {width:65%;}
+
+    #book img {margin-bottom:40px;}
+    #book .preorderform .btn-primary {float:none; margin:10px auto;}
+}   
 
 @media only screen and (max-width : 480px) {
+    
+    h1 {font-size:30px;}
+    h2 {font-size:20px;}
+
+    .responsive {width:75%;}
+        
+    .title-group {
+        h1 {margin-bottom:60px;}
+        img {width:45%; margin-bottom:60px;}
+    }
+    
+        #valueprop {
+        padding:40px 0;
+        img {width:30%;}
+        p {padding:0 20px 40px;}
+    }
+    
+    #fakefooter .alert {
+        width:95%;
+        left:160px;
+            
+    }
+    
 }

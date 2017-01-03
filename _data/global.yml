@@ -1,7 +1,8 @@
 # Site Settings
 title: 'MARKET RESEARCH INCORPORATED'
 description: 'BUSINESS INTELLIGENCE AND APPLICATIONS FOR A POST-FLOOD AMERICA'
-url: 'http://corporatetorsos.com' # the base hostname & protocol for your site
+# url: 'http://marketresearchincorporated.com' # the base hostname & protocol for your site
+url: ''
 
 # Admin Settings
 admin_name: ''
