@@ -27,7 +27,10 @@ body {
     background: $black;
     color:$white;
     margin:0;
+    border-top:40px solid $darkgrey;
 }
+
+* {transition: all 0.25s ease;}
 
 p {margin-bottom: 30px;}
 
@@ -69,6 +72,7 @@ h1,
 h2,
 h3 {
     text-transform: uppercase;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -116,8 +120,6 @@ hr {
     height: 2px;
     border-top: 2px solid $darkgrey;
     background:darken($grey, 27%);
-    
-    // background-image: linear-gradient(to right, $black 20%, $darkgrey 50%, $black 80%);
 }
 
 
@@ -126,8 +128,8 @@ hr {
 
 .title-group {
     text-align: center;
-    padding: 0 15px 80px;
-    margin: 100px auto 0;
+    padding: 0 15px;
+    margin: 80px auto 60px;
     
     h1 {
         margin: 0 0 80px;
@@ -153,17 +155,25 @@ hr {
     text-align:center;
     padding:80px 0 40px;
     p {padding:0 40px;}
-    img {margin-bottom:20px;}
+    img {
+        margin-bottom:20px;
+        position:relative;
+        bottom:0;
+        transition: all 0.15s ease;
+        &:hover { bottom:4px; }
+    }
 }
 
 #hello {
     padding:80px 0;
-    img {margin-bottom:40px;}
+    img {margin:0 0 40px;
+        &:hover {}
+    }
 }
 
-#statue {padding:100px 0 0;
-    
+#statue {padding:100px 0 0;    
     p {padding:0 100px 0 0;}
+    img {margin-bottom:-210px;}
 }
 
 
@@ -209,7 +219,7 @@ hr {
 #book {
     z-index:100;
     position:relative;
-    margin-top:-100px;
+    margin-top:-50px;
     padding:300px 0 0;
     background-image: linear-gradient(-180deg, #000000 0%, rgba(135,43,71,0.60) 40%, rgba(64,80,83,0.00) 100%);
     h2 {margin-bottom:20px;}
