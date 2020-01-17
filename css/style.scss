@@ -58,9 +58,10 @@ a {
     text-decoration: none !important;
     transition: all 225ms ease;
     color: $scotch-secondary;
-    &:hover {
+    &:hover, &:focus {
         color: #6165FF;
     }
+
 }
 
 .btn-primary {
@@ -72,6 +73,11 @@ a {
     border-radius: 0;
     &:hover {
         background: $maroon;
+    }
+    &:focus {
+        background: $maroon;
+        outline: none;
+        border: 2px solid $pink;
     }
 }
 
